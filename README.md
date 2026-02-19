@@ -40,9 +40,12 @@ This repository serves as a **central directory** for discovering, comparing, an
 | Project | Description | Channels | Repo | Contributors |
 |:--------|:------------|:---------|:----:|:------------:|
 | **OpenClaw** | The original full-featured personal AI assistant — multi-agent routing, voice wake, live canvas, companion apps, and 15+ messaging channels | WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Teams, Google Chat, WebChat, + more | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 685+ |
-| **NanoClaw** | Lightweight alternative you can understand in 8 minutes — agents run in real containers with filesystem isolation | WhatsApp (extensible via skills) | [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | 15+ |
 | **PicoClaw** | Ultra-efficient Go assistant for $10 hardware — AI-bootstrapped migration, single binary, runs on old Android phones | WhatsApp, Telegram, Discord, WebChat | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | 58+ |
 | **ZeroClaw** | 100% Rust, trait-driven, zero-overhead AI infrastructure — fully swappable core, deploys anywhere | WhatsApp, Telegram, Discord, Slack | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 64+ |
+| **nanobot** | Ultra-lightweight OpenClaw in ~4,000 lines of Python — research-ready, one-click deploy, MCP support, agent social network | Telegram, Discord, WhatsApp, Slack, Email, Feishu, QQ, MoChat | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 50+ |
+| **TinyClaw** | Multi-agent, multi-team, multi-channel assistant — agents collaborate via chain execution and fan-out with isolated workspaces | Discord, WhatsApp, Telegram | [jlia0/tinyclaw](https://github.com/jlia0/tinyclaw) | 8+ |
+| **MimiClaw** | Pocket AI assistant on a $5 ESP32-S3 chip — pure C, no OS, 0.5W, local-first memory on flash, runs 24/7 on USB power | Telegram, WebSocket | [memovai/mimiclaw](https://github.com/memovai/mimiclaw) | 3+ |
+| **NanoClaw** | Lightweight alternative you can understand in 8 minutes — agents run in real containers with filesystem isolation | WhatsApp (extensible via skills) | [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | 15+ |
 
 <br />
 
@@ -51,9 +54,12 @@ This repository serves as a **central directory** for discovering, comparing, an
 | Project | Language | Memory | Startup | Architecture | Security Model |
 |:--------|:--------:|:------:|:-------:|:-------------|:---------------|
 | **OpenClaw** | TypeScript | ~400MB+ | Moderate | Multi-module Gateway + Agent runtime | Application-level allowlists & pairing |
-| **NanoClaw** | TypeScript | Low | Fast | Single process + Container isolation | OS-level container sandboxing |
 | **PicoClaw** | Go | <10MB | ~1s | Single static binary | Configurable sandbox |
 | **ZeroClaw** | Rust | <5MB | Near-instant | Trait-driven, fully swappable | Strict sandboxing + explicit allowlists |
+| **nanobot** | Python | Low | Fast | Modular agent loop + message bus + skills | Workspace restriction + channel allowlists |
+| **TinyClaw** | Shell / TypeScript | Low | Fast | File-based queue + parallel agent processing | Isolated agent workspaces |
+| **MimiClaw** | C | <520KB RAM | Near-instant | Dual-core ESP32-S3 bare-metal agent loop | Local-only flash storage + network allowlists |
+| **NanoClaw** | TypeScript | Low | Fast | Single process + Container isolation | OS-level container sandboxing |
 
 <br />
 
